@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # -*- coding: utf-8 -*-
 """
  Simple Patch Antenna Tutorial
@@ -17,6 +19,9 @@ from pylab import *
 from CSXCAD  import ContinuousStructure
 from openEMS import openEMS
 from openEMS.physical_constants import *
+import os
+
+os.environ["QT_QPA_PLATFORM"] = "xcb"
 
 ### General parameter setup
 Sim_Path = os.path.join(tempfile.gettempdir(), 'Simp_Patch')

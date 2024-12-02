@@ -15,4 +15,8 @@ pkgs.mkShell {
       ])
     ))
   ];
+
+  shellHook = ''
+    exec fish
+  '';
 }
